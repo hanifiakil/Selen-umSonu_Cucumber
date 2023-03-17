@@ -57,4 +57,17 @@ public class AmazonStepDefinitions {
 
         Assert.assertTrue(arananSonuçElementi.contains(arananKelime));
     }
+
+    @And("kullanıcı fatma için arama yapar")
+    public void kullanıcıFatmaIçinAramaYapar() {
+        amazonPage.aramaKutusu.sendKeys("fatma"+Keys.ENTER);
+    }
+
+    @Then("sonuçların fatma içerdiğini test eder")
+    public void sonuçlarınFatmaIçerdiğiniTestEder() {
+        String arananKelime="fatma";
+        String arananSonuçElementi=amazonPage.aramasonuçElementi.getText();
+
+        Assert.assertTrue(arananSonuçElementi.contains(arananKelime));
+    }
 }
