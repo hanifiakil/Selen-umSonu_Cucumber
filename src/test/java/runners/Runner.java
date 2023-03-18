@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions",   //step definitions dosyalarını nereden bulacagımızı gösterir
 
-        tags = "@fatma",   //o an hangi tag ı çalıştırmak istiyorsak onu belli eder
+        tags = "@hanifi",   //o an hangi tag ı çalıştırmak istiyorsak onu belli eder
 
         dryRun = false   // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir
         // dryRun=false yaparsak testi calistirir, eksik bir adimla karsilasirsa
