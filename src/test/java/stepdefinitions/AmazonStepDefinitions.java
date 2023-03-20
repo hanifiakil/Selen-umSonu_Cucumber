@@ -70,4 +70,33 @@ public class AmazonStepDefinitions {
 
         Assert.assertTrue(arananSonuçElementi.contains(arananKelime));
     }
+
+    @Given("kullanıcı {string} için arama yapar")
+    public void kullanıcı_için_arama_yapar(String istenenKelime) {
+        amazonPage.aramaKutusu.sendKeys(istenenKelime+Keys.ENTER);
+    }
+    @Given("sonuçların {string} içerdiğini test eder")
+    public void sonuçların_içerdiğini_test_eder(String istenenKelime) {
+        String arananKelime=istenenKelime;
+        String arananSonuçElementi=amazonPage.aramasonuçElementi.getText();
+
+        Assert.assertTrue(arananSonuçElementi.contains(arananKelime));
+    }
+
+    @Given("kullanıcı {string} anasayfasında")//amazonUrl
+    public void kullanıcıAnasayfasında(String istenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
+
+    @And("url'in {string} içerdiğini test eder")
+    public void urlInIçerdiğiniTestEder(String istenenKelime) {
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+
+        Assert.assertTrue(actualUrl.contains(istenenKelime));
+    }
+
+    @Then("kullanıcı {int} saniye bekler")
+    public void kullanıcıSaniyeBekler(int istenensaniye) throws InterruptedException {
+        Thread.sleep(istenensaniye*1000);
+    }
 }
