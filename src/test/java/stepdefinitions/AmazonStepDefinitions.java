@@ -97,6 +97,10 @@ public class AmazonStepDefinitions {
 
     @Then("kullanıcı {int} saniye bekler")
     public void kullanıcıSaniyeBekler(int istenensaniye) throws InterruptedException {
-        Thread.sleep(istenensaniye*1000);
+       try{ Thread.sleep(istenensaniye*1000);
+    } catch (InterruptedException e) {
+           e.printStackTrace();
+       }
+
     }
 }
