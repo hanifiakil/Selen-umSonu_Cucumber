@@ -12,3 +12,23 @@ Feature: US1006 yanlış bilgilerle siteye giriş yapılmaz
     And Login butonuna basar
     Then sayfaya giris yapilmadığını test eder
     And sayfayı kapatır
+
+  @CH3
+  Scenario: TC10 yanlış kullanıcı ile giriş yapılamaz
+    When kullanıcı "HMCUrl" anasayfasında
+    Then Log in yazısına tıklar
+    And geçersiz username girer
+    And geçerli password girer
+    And Login butonuna basar
+    Then sayfaya giris yapilmadığını test eder
+    And sayfayı kapatır
+
+  @CH4
+  Scenario: TC11 yanlış kullanıcı adı ve yanlış şifre ile giriş yapılamaz
+      When kullanıcı "HMCUrl" anasayfasında
+      Then Log in yazısına tıklar
+      And geçersiz username girer
+      And geçersiz password girer
+      And Login butonuna basar
+      Then sayfaya giris yapilmadığını test eder
+      And sayfayı kapatır

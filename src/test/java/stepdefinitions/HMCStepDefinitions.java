@@ -38,4 +38,20 @@ Assert.assertTrue(hmcPage.girisYapildiKontrolYazi.isDisplayed());
     public void sayfayaGirisYapilmadığınıTestEder() {
    Assert.assertTrue(hmcPage.girisYapilamadiYazisiElementi.isDisplayed());
     }
+
+    @And("geçersiz username girer")
+    public void geçersizUsernameGirer() {
+        hmcPage.usernameKutusu.sendKeys(ConfigReader.getProperty("HMCWrongUsername"));
+    }
+
+
+    @And("geçersiz username olarak {string} girer")
+    public void geçersizUsernameOlarakGirer(String username) {
+        hmcPage.usernameKutusu.sendKeys(username);
+    }
+
+    @And("geçersiz password olarak {string} girer")
+    public void geçersizPasswordOlarakGirer(String password) {
+        hmcPage.passwordKutusu.sendKeys(password);
+    }
 }
