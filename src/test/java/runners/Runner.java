@@ -6,11 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:target/cucumber-reports.html"},
         features = "src/test/resources/features",   //Runner dosyasının feature dosyalarını nereden bulacagını tarif eder
 
         glue = "stepdefinitions",   //step definitions dosyalarını nereden bulacagımızı gösterir
 
-        tags = "@datatable",   //o an hangi tag ı çalıştırmak istiyorsak onu belli eder
+        tags = "@CH4",   //o an hangi tag ı çalıştırmak istiyorsak onu belli eder
 
         dryRun = false   // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir
         // dryRun=false yaparsak testi calistirir, eksik bir adimla karsilasirsa

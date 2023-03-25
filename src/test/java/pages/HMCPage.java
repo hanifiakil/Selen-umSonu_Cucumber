@@ -7,6 +7,7 @@ import utilities.Driver;
 
 public class HMCPage {
     public HMCPage(){
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//a[text()='Log in']")
