@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="27.598" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1003 kullanıcı parametre kullanarak arama yapabilmeli" name="TC06 kullanıcı parametre ile amazon da arama yapabilmeli" time="27.199">
+<system-out><![CDATA[
+Given kullanıcı amazon anasayfasında........................................passed
+And kullanıcı "java" için arama yapar.......................................passed
+And sonuçların "java" içerdiğini test eder..................................passed
+Then sayfayı kapatır........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
