@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="27.598" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US1003 kullanıcı parametre kullanarak arama yapabilmeli" name="TC06 kullanıcı parametre ile amazon da arama yapabilmeli" time="27.199">
+<testsuite name="Cucumber" time="0.651" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US1012 kullanıcı register yapabilmeli" name="TC17 kullanıcı uygun datalarla register olabilmeli" time="0.074">
+<failure/>
 <system-out><![CDATA[
-Given kullanıcı amazon anasayfasında........................................passed
-And kullanıcı "java" için arama yapar.......................................passed
-And sonuçların "java" içerdiğini test eder..................................passed
-Then sayfayı kapatır........................................................passed
+Given kullanıcı "automationUrl" anasayfasında...............................passed
+And user sing in linkine tıklar.............................................undefined
+And user Create and account bölümüne email adresi girer.....................skipped
+And Create an Account butonuna basar........................................skipped
+And user kişisel bilgilerini ve iletişim bilgilerini girer..................skipped
+And user Register butonuna basar............................................skipped
+Then hesap oluşturduğunu doğrular...........................................skipped
+And sayfayı kapatır.........................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

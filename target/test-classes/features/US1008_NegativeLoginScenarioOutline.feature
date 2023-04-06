@@ -1,6 +1,6 @@
 Feature: US1008 kullanıcı farklı yanlış şifre ve kullanıcı adıyla giriş yapamaz
 
-@CH06
+@CH06 @sıralı
   Scenario Outline: TC13 yanlış kullanıcı adı ve şifrelerle giriş yapılamaz
     When kullanıcı "HMCUrl" anasayfasında
     Then Log in yazısına tıklar

@@ -1,6 +1,6 @@
 Feature: US1004 kullanıcı parametre ile configration file i kullanabilir
 
-  @config
+  @config  @sıralı
   Scenario: TC07 configuration properties dosyasından parametre kullanımı
 
     Given kullanıcı "facebookUrl" anasayfasında

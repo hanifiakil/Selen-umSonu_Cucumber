@@ -1,5 +1,5 @@
 
-@hanifi
+@hanifi @pr1
 Feature: us1002 Kullanıcı ortak adımları Background ile çalıştırır
   Background: ortak adım
     Given kullanıcı amazon anasayfasında
