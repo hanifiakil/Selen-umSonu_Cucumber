@@ -13,9 +13,9 @@ import org.junit.runner.RunWith;
 
         glue = "stepdefinitions",   //step definitions dosyalarını nereden bulacagımızı gösterir
 
-        tags = "@aut",   //o an hangi tag ı çalıştırmak istiyorsak onu belli eder
+        tags = "@nutella",   //o an hangi tag ı çalıştırmak istiyorsak onu belli eder
 
-        dryRun = true   // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir
+        dryRun = false   // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir
         // dryRun=false yaparsak testi calistirir, eksik bir adimla karsilasirsa
         // test failed olur ve bize eksik adimi raporlar
 

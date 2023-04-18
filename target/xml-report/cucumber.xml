@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.651" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US1012 kullanıcı register yapabilmeli" name="TC17 kullanıcı uygun datalarla register olabilmeli" time="0.074">
-<failure/>
+<testsuite name="Cucumber" time="45.663" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 Kullanıcı Amazon Sayfasında Arama Yapar" name="TC01 kullanıcı amazonda Nutella aratır" time="44.705">
 <system-out><![CDATA[
-Given kullanıcı "automationUrl" anasayfasında...............................passed
-And user sing in linkine tıklar.............................................undefined
-And user Create and account bölümüne email adresi girer.....................skipped
-And Create an Account butonuna basar........................................skipped
-And user kişisel bilgilerini ve iletişim bilgilerini girer..................skipped
-And user Register butonuna basar............................................skipped
-Then hesap oluşturduğunu doğrular...........................................skipped
-And sayfayı kapatır.........................................................skipped
+Given kullanıcı amazon anasayfasında........................................passed
+Then kullanıcı Nutella için arama yapar.....................................passed
+And sonuçların Nutella içerdiğini test eder.................................passed
+And sayfayı kapatır.........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

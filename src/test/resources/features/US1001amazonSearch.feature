@@ -1,6 +1,6 @@
 @tümü
 Feature: US1001 Kullanıcı Amazon Sayfasında Arama Yapar
-@nutella
+@nutellaara
   Scenario: TC01 kullanıcı amazonda Nutella aratır
 
     Given kullanıcı amazon anasayfasında
